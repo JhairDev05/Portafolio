@@ -167,6 +167,7 @@ header {
     vertical-align: top;
     border-radius: 5px;
     box-shadow: 7px 7px 5px rgba(79, 80, 83, 0.5);
+    object-fit: cover;
 }
 
 .contenedor-trabajos .trabajo .imagen:hover {
