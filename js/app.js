@@ -4,11 +4,13 @@ document.addEventListener('DOMContentLoaded', function () {
     const whats = document.querySelector('#whatsapp');
     const quiosco = document.querySelector('#quiosco');
     const menu = document.querySelector('#menu');
+    const pern = document.querySelector('#pern');
 
     email.addEventListener('click', enviarEmail);
     whats.addEventListener('click', enviarWhats);
     quiosco.addEventListener('click', linkQuiosco);
     menu.addEventListener('click', linkMenu);
+    pern.addEventListener('click', linkPern);
 
 
     function enviarEmail() {
@@ -29,6 +31,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function linkMenu() {
         const url = 'https://menu-la-heladera.netlify.app/';
+        window.open(url, '_blank');
+    }
+
+    function linkPern() {
+        const url = 'https://rest-apis-typescript-frontend-ten-rho.vercel.app/';
         window.open(url, '_blank');
     }
 
