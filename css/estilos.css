@@ -134,7 +134,7 @@ header {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 40%;
+    width: 50%; /* Ajuste para que el contenedor ocupe el ancho completo */
 }
 
 .tituloTrabajo {
@@ -147,13 +147,16 @@ header {
 
 .contenedor-trabajos {
     display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a la siguiente fila */
     justify-content: space-between;
-    width: 100%;
+    gap: 20px; /* Espacio entre los elementos */
 }
 
 .trabajo {
-    margin: 0 auto;
-    padding: 0 20px;
+    flex: 0 1 48%; /* Ocupa aproximadamente el 50% del ancho, dejando espacio para dos por fila */
+    margin: 0;
+    padding: 0 10px; /* Ajusta el padding */
+    box-sizing: border-box;
     z-index: 0;
 }
 
@@ -257,6 +260,20 @@ button:hover p, h3 {
 
 /* ------------------- ---------- Medias queries ----------- --------- */
 
+@media screen and (max-width: 999px) {
+    .contenedor-t {
+        width: 50%;
+    }
+
+    .trabajo {
+        flex: 100%; /* Ocupa aproximadamente el 50% del ancho, dejando espacio para dos por fila */
+        margin: 0;
+        padding: 0 10px; /* Ajusta el padding */
+        box-sizing: border-box;
+        z-index: 0;
+    }
+}
+
 @media screen and (max-width: 850px) {
    
     .presentacion {
@@ -271,9 +288,17 @@ button:hover p, h3 {
         width: 50%;
     }
 
+    .trabajo {
+        flex: 100%; /* Ocupa aproximadamente el 50% del ancho, dejando espacio para dos por fila */
+        margin: 0;
+        padding: 0 10px; /* Ajusta el padding */
+        box-sizing: border-box;
+        z-index: 0;
+    }
+
     .contenedor-trabajos .trabajo .imagen img {
-        width: 150px;
-        height: 150px;
+        width: 100%;
+        height: 100%;
     }
 
     .contacto {
@@ -326,8 +351,8 @@ button:hover p, h3 {
     }
 
     .contenedor-trabajos .trabajo .imagen img {
-        width: 230px;
-        height: 230px;
+        width: 100%;
+        height: 100%;
         margin-bottom: 10px;
     }
 
