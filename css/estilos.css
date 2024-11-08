@@ -134,7 +134,7 @@ header {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 50%; /* Ajuste para que el contenedor ocupe el ancho completo */
+    width: 40%; /* Ajuste para que el contenedor ocupe el ancho completo */
 }
 
 .tituloTrabajo {
@@ -153,7 +153,7 @@ header {
 }
 
 .trabajo {
-    flex: 0 1 48%; /* Ocupa aproximadamente el 50% del ancho, dejando espacio para dos por fila */
+    flex: 48%; /* Ocupa aproximadamente el 50% del ancho, dejando espacio para dos por fila */
     margin: 0;
     padding: 0 10px; /* Ajusta el padding */
     box-sizing: border-box;
