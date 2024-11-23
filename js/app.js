@@ -5,12 +5,14 @@ document.addEventListener('DOMContentLoaded', function () {
     const quiosco = document.querySelector('#quiosco');
     const menu = document.querySelector('#menu');
     const pern = document.querySelector('#pern');
+    const mern = document.querySelector('#mern');
 
     email.addEventListener('click', enviarEmail);
     whats.addEventListener('click', enviarWhats);
     quiosco.addEventListener('click', linkQuiosco);
     menu.addEventListener('click', linkMenu);
     pern.addEventListener('click', linkPern);
+    pern.addEventListener('click', linkMern);
 
 
     function enviarEmail() {
@@ -36,6 +38,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function linkPern() {
         const url = 'https://rest-apis-typescript-frontend-ten-rho.vercel.app/';
+        window.open(url, '_blank');
+    }
+
+    function linkMern() {
+        const url = 'https://uptask-frontend-pi.vercel.app/auth/login';
         window.open(url, '_blank');
     }
 
