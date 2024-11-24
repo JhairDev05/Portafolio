@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     quiosco.addEventListener('click', linkQuiosco);
     menu.addEventListener('click', linkMenu);
     pern.addEventListener('click', linkPern);
-    pern.addEventListener('click', linkMern);
+    mern.addEventListener('click', linkMern);
 
 
     function enviarEmail() {
